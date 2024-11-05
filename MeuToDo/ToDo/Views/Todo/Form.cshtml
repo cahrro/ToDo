@@ -1,0 +1,21 @@
+﻿@model ToDo.Models.Todo
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="row">
+        <div class="mb-3 col">
+            <label asp-for="Titulo">Titulo</label>
+            <input asp-for="Titulo" class="form-control" />
+            <span asp-validation-for="Titulo" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3 col-12 col-md-6">
+            <label asp-for="Prazo">Data de Entrega</label>
+            <input asp-for="Prazo" class="form-control custom-date-input" type="date" />
+            <span asp-validation-for="Prazo" class="text-danger"></span>
+        </div>
+    </div>
+    
+
+    <button class="btn btn-primary" type="submit">Salvar</button>
+</form>

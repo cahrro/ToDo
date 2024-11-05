@@ -1,0 +1,44 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.custom-spacing {
+    margin-left: 5rem; /* Ajuste o valor conforme necessário */
+}
+
+@media (max-width: 576px) {
+    .custom-spacing {
+        margin-left: 0; /* Remove a margem em telas pequenas */
+    }
+}
+
+.btn-spacing {
+    margin-right: 9%; /* Ajuste o valor conforme necessário */
+}
+
+.btn-spacing:last-child {
+    margin-right: 0; /* Remove a margem do último botão */
+}
+
+.custom-date-input{
+    width: 35%;
+}
